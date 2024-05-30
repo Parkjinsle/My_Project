@@ -15,11 +15,13 @@ h4 {
 
 @keyframes main_animation_top {
   0% {
+    font-variation-settings: 'wght' 100;
     transform: scaleX(0);
     transform-origin: left;
   }
 
   100% {
+    font-variation-settings: 'wght' 700;
     transform: scaleX(1);
     transform-origin: left;
   }
@@ -27,6 +29,7 @@ h4 {
 
 @keyframes main_animation_middle {
   0% {
+    font-variation-settings: 'wght' 100;
     transform: scaleX(0);
     transform-origin: left;
   }
@@ -37,6 +40,7 @@ h4 {
   }
 
   100% {
+    font-variation-settings: 'wght' 700;
     transform: scaleX(1);
     transform-origin: left;
   }
@@ -44,6 +48,7 @@ h4 {
 
 @keyframes main_animation_bottom {
   0% {
+    font-variation-settings: 'wght' 100;
     transform: scaleX(0);
     transform-origin: left;
   }
@@ -54,6 +59,7 @@ h4 {
   }
 
   100% {
+    font-variation-settings: 'wght' 700;
     transform: scaleX(1);
     transform-origin: left;
   }
