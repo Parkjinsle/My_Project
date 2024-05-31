@@ -99,6 +99,24 @@
           </script>
         </div>
       </div>
+      <div class="motion">
+        <video autoplay muted loop class="motion_video">
+          <source src="./img/motion/freitag.mp4" type="video/mp4" />
+        </video>
+        <div class="motion_text">
+          <div class="circle"></div>
+          <h1><a href="./pages/page_5.html">2D MOTION GRAPHICS</a></h1>
+        </div>
+        <script>
+          const motionText = document.querySelector('.motion_text');
+          motionText.addEventListener('mouseenter', function () {
+            this.classList.add('main_top');
+          });
+          motionText.addEventListener('animationend', function () {
+            this.classList.remove('main_top');
+          });
+        </script>
+      </div>
     </div>
   </body>
 </html>

@@ -110,7 +110,6 @@ h4 {
 }
 
 .less_img {
-  min-width: 300px;
   max-width: 80%;
 }
 .less_text {
@@ -189,7 +188,6 @@ h4 {
   margin-top: 300px;
 }
 .poster_img {
-  min-width: 500px;
   max-width: 100%;
   margin-top: 300px;
 }
@@ -209,5 +207,30 @@ h4 {
 }
 
 .poster_text:hover .circle {
+  animation: color_change 4s infinite;
+}
+
+.motion {
+  margin-bottom: 100px;
+}
+.motion_video {
+  max-width: 100%;
+}
+.motion_text {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 90px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.motion_text a {
+  color: black;
+  text-decoration: none;
+}
+
+.motion_text:hover .circle {
   animation: color_change 4s infinite;
 }
