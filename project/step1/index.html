@@ -99,6 +99,24 @@
           </script>
         </div>
       </div>
+      <div class="book">
+        <video autoplay muted loop class="book_video">
+          <source src="./img/book/book.mp4" type="video/mp4" />
+        </video>
+        <div class="book_text">
+          <div class="circle"></div>
+          <h1><a href="./pages/page_4.html">TYPOGRAPHY</a></h1>
+        </div>
+        <script>
+          const bookText = document.querySelector('.book_text');
+          bookText.addEventListener('mouseenter', function () {
+            this.classList.add('main_top');
+          });
+          bookText.addEventListener('animationend', function () {
+            this.classList.remove('main_top');
+          });
+        </script>
+      </div>
       <div class="motion">
         <video autoplay muted loop class="motion_video">
           <source src="./img/motion/freitag.mp4" type="video/mp4" />
