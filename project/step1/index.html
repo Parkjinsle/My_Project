@@ -10,27 +10,71 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Anybody:wght@100;400;700&display=swap"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      body {
+      h1,
+      h2,
+      h3,
+      h4 {
         font-family: 'Anybody', sans-serif;
+        font-weight: 700;
       }
-      h1 {
-        font-weight: 900;
+      body {
+        font-family: 'IBM Plex Sans KR', sans-serif;
+        font-weight: 400;
       }
     </style>
     <title>My Project</title>
   </head>
   <body>
     <div class="section">
-      <div class="menu">
-        <div>2024 SMU</div>
-        <div>Communication Design</div>
-        <div>202220267 박진슬</div>
+      <div class="section_menu">
+        <div class="section_menu_left">2024 SMU</div>
+        <div class="section_menu_center">Communication Design</div>
+        <div class="section_menu_right">202220267 박진슬</div>
       </div>
-      <div class="main">
-        <div class="main_top"><h1>Web</h1></div>
-        <div class="main_middle"><h1>Media</h1></div>
-        <div class="main_bottom"><h1>Design</h1></div>
+    </div>
+    <div class="main">
+      <div class="main_top"><h1>Web</h1></div>
+      <div class="main_middle"><h1>Media</h1></div>
+      <div class="main_bottom"><h1>Design</h1></div>
+    </div>
+    <div class="container">
+      <div class="less">
+        <img
+          src="./img/less_is_bore/Less_is_Bore_1jpg.jpg"
+          alt=""
+          class="less_img"
+        />
+        <div class="less_text">
+          <!-- <script>
+            less_text.addEventListener('mouseenter', function () {
+              this.classList.add('color_change');
+            });
+          </script> -->
+          <div class="circle"></div>
+          <h1><a href="./pages/page_1.html">COMMUNICATION DESIGN</a></h1>
+        </div>
+        <script>
+          const lessText = document.querySelector('.less_text');
+          lessText.addEventListener('mouseenter', function () {
+            this.classList.add('main_top');
+          });
+          lessText.addEventListener('animationend', function () {
+            this.classList.remove('main_top');
+          });
+
+          // const circle = document.querySelector('.less_text');
+          // lesstext.addEventListener('mouseenter', function () {
+          //   this.classList.add('color_change');
+          // });
+          // circle.addEventListener('animationend', function () {
+          //   this.classList.remove('color_change');
+          // });
+        </script>
       </div>
     </div>
   </body>
