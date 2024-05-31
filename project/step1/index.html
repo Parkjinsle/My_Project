@@ -43,38 +43,61 @@
       <div class="main_bottom"><h1>Design</h1></div>
     </div>
     <div class="container">
-      <div class="less">
-        <img
-          src="./img/less_is_bore/Less_is_Bore_1jpg.jpg"
-          alt=""
-          class="less_img"
-        />
-        <div class="less_text">
-          <!-- <script>
-            less_text.addEventListener('mouseenter', function () {
-              this.classList.add('color_change');
-            });
-          </script> -->
+      <div class="reflat">
+        <img src="./img/reflat/reflat_1.png" alt="" class="reflat_img" />
+        <div class="reflat_text">
           <div class="circle"></div>
-          <h1><a href="./pages/page_1.html">COMMUNICATION DESIGN</a></h1>
+          <h1><a href="./pages/page_2.html">BASIC TYPOGRAPHY</a></h1>
         </div>
         <script>
-          const lessText = document.querySelector('.less_text');
-          lessText.addEventListener('mouseenter', function () {
+          const reflatText = document.querySelector('.reflat_text');
+          reflatText.addEventListener('mouseenter', function () {
             this.classList.add('main_top');
           });
-          lessText.addEventListener('animationend', function () {
+          reflatText.addEventListener('animationend', function () {
             this.classList.remove('main_top');
           });
-
-          // const circle = document.querySelector('.less_text');
-          // lesstext.addEventListener('mouseenter', function () {
-          //   this.classList.add('color_change');
-          // });
-          // circle.addEventListener('animationend', function () {
-          //   this.classList.remove('color_change');
-          // });
         </script>
+      </div>
+      <div class="container_top">
+        <div class="less">
+          <img
+            src="./img/less_is_bore/Less_is_Bore_1jpg.jpg"
+            alt=""
+            class="less_img"
+          />
+          <div class="less_text">
+            <div class="circle"></div>
+            <h1>
+              <a href="./pages/page_1.html">BASIC COMMUNICATION DESIGN</a>
+            </h1>
+          </div>
+          <script>
+            const lessText = document.querySelector('.less_text');
+            lessText.addEventListener('mouseenter', function () {
+              this.classList.add('main_top');
+            });
+            lessText.addEventListener('animationend', function () {
+              this.classList.remove('main_top');
+            });
+          </script>
+        </div>
+        <div class="poster">
+          <img src="./img/poster/poster.jpg" alt="" class="reflat_img" />
+          <div class="poster_text">
+            <div class="circle"></div>
+            <h1><a href="./pages/page_3.html">TYPOGRAPHY</a></h1>
+          </div>
+          <script>
+            const posterText = document.querySelector('.poster_text');
+            posterText.addEventListener('mouseenter', function () {
+              this.classList.add('main_top');
+            });
+            posterText.addEventListener('animationend', function () {
+              this.classList.remove('main_top');
+            });
+          </script>
+        </div>
       </div>
     </div>
   </body>
