@@ -124,18 +124,18 @@ h4 {
 
 .container {
   margin-inline: 42px;
-
-  &_top {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 150px;
-  }
 }
 
 .less {
   &_img {
-    max-width: 80%;
+    max-width: 70%;
+    margin-top: 32px;
+  }
+
+  &_subtext {
+    padding-top: 12px;
+    font-size: 18px;
+    color: darkgrey;
   }
 
   &_text {
@@ -143,7 +143,7 @@ h4 {
     grid-template-columns: 15px 450px;
     gap: 14px;
     align-items: center;
-    padding-top: 32px;
+    padding-top: 16px;
     padding-bottom: 90px;
     font-size: 14px;
     cursor: pointer;
@@ -202,12 +202,18 @@ h4 {
     max-width: 100%;
   }
 
+  &_subtext {
+    padding-top: 12px;
+    font-size: 18px;
+    color: darkgray;
+  }
+
   &_text {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 14px;
     align-items: center;
-    padding-top: 32px;
+    padding-top: 16px;
     padding-bottom: 90px;
     font-size: 14px;
     cursor: pointer;
@@ -224,11 +230,16 @@ h4 {
 }
 
 .poster {
-  margin-top: 300px;
+  margin-top: 50px;
 
   &_img {
-    max-width: 100%;
-    margin-top: 300px;
+    max-width: 70%;
+  }
+
+  &_subtext {
+    padding-top: 12px;
+    font-size: 18px;
+    color: darkgray;
   }
 
   &_text {
@@ -236,7 +247,7 @@ h4 {
     grid-template-columns: auto 1fr;
     gap: 14px;
     align-items: center;
-    padding-top: 32px;
+    padding-top: 16px;
     padding-bottom: 90px;
     font-size: 14px;
     cursor: pointer;
@@ -260,12 +271,18 @@ h4 {
     max-width: 100%;
   }
 
+  &_subtext {
+    padding-top: 12px;
+    font-size: 18px;
+    color: darkgray;
+  }
+
   &_text {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 14px;
     align-items: center;
-    padding-top: 32px;
+    padding-top: 16px;
     padding-bottom: 90px;
     font-size: 14px;
     cursor: pointer;
@@ -292,12 +309,18 @@ h4 {
     max-width: 100%;
   }
 
+  &_subtext {
+    padding-top: 12px;
+    font-size: 18px;
+    color: darkgray;
+  }
+
   &_text {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 14px;
     align-items: center;
-    padding-top: 32px;
+    padding-top: 16px;
     padding-bottom: 90px;
     font-size: 14px;
     cursor: pointer;
