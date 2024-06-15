@@ -122,64 +122,6 @@ h4 {
   }
 }
 
-.container {
-  margin-inline: 42px;
-
-  &_reflat {
-    color: black;
-    text-decoration: none;
-  }
-
-  &_less {
-    color: black;
-    text-decoration: none;
-  }
-
-  &_poster {
-    color: black;
-    text-decoration: none;
-  }
-
-  &_book {
-    color: black;
-    text-decoration: none;
-  }
-
-  &_motion {
-    color: black;
-    text-decoration: none;
-  }
-
-  &_package {
-    color: black;
-    text-decoration: none;
-  }
-}
-
-.less {
-  &_img {
-    max-width: 70%;
-    margin-top: 32px;
-  }
-
-  &_subtext {
-    padding-top: 12px;
-    font-size: 18px;
-    color: darkgrey;
-  }
-
-  &_text {
-    display: grid;
-    grid-template-columns: 15px 450px;
-    gap: 14px;
-    align-items: center;
-    padding-top: 16px;
-    margin-bottom: 90px;
-    font-size: 14px;
-    cursor: pointer;
-  }
-}
-
 @keyframes color_change {
   0% {
     background-color: black;
@@ -217,8 +159,38 @@ h4 {
   border-radius: 50%;
 }
 
-.less_text:hover .circle {
-  animation: color_change 4s infinite;
+.container {
+  margin-inline: 42px;
+
+  &_reflat {
+    color: black;
+    text-decoration: none;
+  }
+
+  &_less {
+    color: black;
+    text-decoration: none;
+  }
+
+  &_poster {
+    color: black;
+    text-decoration: none;
+  }
+
+  &_book {
+    color: black;
+    text-decoration: none;
+  }
+
+  &_motion {
+    color: black;
+    text-decoration: none;
+  }
+
+  &_package {
+    color: black;
+    text-decoration: none;
+  }
 }
 
 .reflat {
@@ -246,6 +218,34 @@ h4 {
 }
 
 .reflat_text:hover .circle {
+  animation: color_change 4s infinite;
+}
+
+.less {
+  &_img {
+    max-width: 70%;
+    margin-top: 32px;
+  }
+
+  &_subtext {
+    padding-top: 12px;
+    font-size: 18px;
+    color: darkgrey;
+  }
+
+  &_text {
+    display: grid;
+    grid-template-columns: 15px 450px;
+    gap: 14px;
+    align-items: center;
+    padding-top: 16px;
+    margin-bottom: 90px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+
+.less_text:hover .circle {
   animation: color_change 4s infinite;
 }
 
