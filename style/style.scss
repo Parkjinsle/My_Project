@@ -124,6 +124,36 @@ h4 {
 
 .container {
   margin-inline: 42px;
+
+  &_reflat {
+    color: black;
+    text-decoration: none;
+  }
+
+  &_less {
+    color: black;
+    text-decoration: none;
+  }
+
+  &_poster {
+    color: black;
+    text-decoration: none;
+  }
+
+  &_book {
+    color: black;
+    text-decoration: none;
+  }
+
+  &_motion {
+    color: black;
+    text-decoration: none;
+  }
+
+  &_package {
+    color: black;
+    text-decoration: none;
+  }
 }
 
 .less {
@@ -144,14 +174,9 @@ h4 {
     gap: 14px;
     align-items: center;
     padding-top: 16px;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
     font-size: 14px;
     cursor: pointer;
-
-    a {
-      color: black;
-      text-decoration: none;
-    }
   }
 }
 
@@ -214,14 +239,9 @@ h4 {
     gap: 14px;
     align-items: center;
     padding-top: 16px;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
     font-size: 14px;
     cursor: pointer;
-
-    a {
-      color: black;
-      text-decoration: none;
-    }
   }
 }
 
@@ -248,14 +268,9 @@ h4 {
     gap: 14px;
     align-items: center;
     padding-top: 16px;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
     font-size: 14px;
     cursor: pointer;
-
-    a {
-      color: black;
-      text-decoration: none;
-    }
   }
 }
 
@@ -283,7 +298,7 @@ h4 {
     gap: 14px;
     align-items: center;
     padding-top: 16px;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
     font-size: 14px;
     cursor: pointer;
 
@@ -321,7 +336,7 @@ h4 {
     gap: 14px;
     align-items: center;
     padding-top: 16px;
-    padding-bottom: 90px;
+    margin-bottom: 90px;
     font-size: 14px;
     cursor: pointer;
 
@@ -333,5 +348,33 @@ h4 {
 }
 
 .motion_text:hover .circle {
+  animation: color_change 4s infinite;
+}
+
+.package {
+  &_img {
+    min-width: 500px;
+    max-width: 100%;
+  }
+
+  &_subtext {
+    padding-top: 12px;
+    font-size: 18px;
+    color: darkgray;
+  }
+
+  &_text {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 14px;
+    align-items: center;
+    padding-top: 16px;
+    margin-bottom: 90px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+
+.package_text:hover .circle {
   animation: color_change 4s infinite;
 }
