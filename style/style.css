@@ -262,10 +262,6 @@ h4 {
   animation: color_change 4s infinite;
 }
 
-.motion_text:hover .circle {
-  animation: color_change 4s infinite;
-}
-
 .motion {
   margin-bottom: 100px;
 }

@@ -23,7 +23,8 @@ h4 {
   padding-inline: 42px;
   margin-block: 8px;
   font-size: 14px;
-  background-image: radial-gradient(circle, rgb(237, 219, 212) 1px, transparent 1px);
+  color: #e3c429;
+  background-image: radial-gradient(circle, rgb(27, 117, 220) 1px, transparent 1px);
   background-size: 5px 5px;
 }
 .section_menu_left {
@@ -40,7 +41,7 @@ h4 {
   0% {
     font-variation-settings: "wght" 700;
     visibility: visible;
-    transform: scaleX(1);
+    transform: scaleX(0.3);
     transform-origin: left;
   }
   100% {
@@ -63,22 +64,54 @@ h4 {
   }
 }
 .main {
-  display: grid;
-  grid-template-columns: 120px repeat(auto-fit, minmax(0, 1fr));
   width: auto;
+  padding-inline: 42px;
   padding-top: 250px;
-  padding-left: 42px;
   margin-bottom: 200px;
   font-size: 45px;
+  color: azure;
   text-transform: uppercase;
-  background-color: cadetblue;
+  background-color: rgb(21, 45, 179);
   -webkit-font-smoothing: antialiased;
 }
-.main_left {
+.main_top {
   padding-top: 12px;
   animation: main_animation_left 0.85s cubic-bezier(0.68, 0, 0.32, 1) 0.5s forwards;
 }
-.main_right {
+.main_middle {
   font-size: 60px;
   animation: main_animation_right 0.85s cubic-bezier(0.68, 0, 0.32, 1) 0.5s forwards;
+}
+.main_bottom {
+  margin-top: 40px;
+}
+.main_bottom_img {
+  min-width: 500px;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+.main_bottom_text {
+  display: grid;
+  grid-template-columns: 800px repeat(auto-fit, minmax(0, 1fr));
+}
+.main_bottom_text_left {
+  margin-top: 150px;
+  margin-bottom: 12px;
+  font-size: 32px;
+  font-weight: 300;
+}
+.main_bottom_text_right {
+  display: grid;
+  grid-template-columns: 24px repeat(auto-fit, minmax(0, 1fr));
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.circle_1 {
+  width: 14px;
+  height: 14px;
+  margin-top: 9px;
+  background-image: radial-gradient(circle, rgb(237, 236, 232) 1px, transparent 1px);
+  background-size: 4px 4px;
+  border-radius: 50%;
 }
