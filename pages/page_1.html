@@ -58,6 +58,159 @@
           <img src="/img/reflat/reflat_1.png" alt="" class="main_bottom_img" />
         </div>
       </div>
+      <div class="container">
+        <div class="container_top">
+          <div class="container_top_text">REFLAT FORM</div>
+          <img src="/img/reflat/form_1.png" alt="" class="container_top_img" />
+        </div>
+        <div class="container_center">
+          <div class="container_center_top" id="containerCenterTop">
+            <img src="/img/reflat/form_2.png" alt="" class="box" />
+            <img src="/img/reflat/form_3.png" alt="" class="box" />
+            <img src="/img/reflat/form_4.png" alt="" class="box" />
+            <img src="/img/reflat/form_5.png" alt="" class="box" />
+          </div>
+        </div>
+      </div>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.1,
+        };
+
+        const observerCallback = (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              document
+                .querySelectorAll(
+                  '.section_menu_left, .section_menu_center, .section_menu_right'
+                )
+                .forEach((el) => {
+                  el.classList.add('change-color');
+                });
+              document
+                .querySelector('.section_menu')
+                .classList.add('change-bg');
+            } else {
+              document
+                .querySelectorAll(
+                  '.section_menu_left, .section_menu_center, .section_menu_right'
+                )
+                .forEach((el) => {
+                  el.classList.remove('change-color');
+                });
+              document
+                .querySelector('.section_menu')
+                .classList.remove('change-bg');
+            }
+          });
+        };
+
+        const observer = new IntersectionObserver(
+          observerCallback,
+          observerOptions
+        );
+
+        const container = document.querySelector('.container');
+        observer.observe(container);
+      });
+    </script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const containerCenter = document.querySelector('.container_center');
+        const containerTop = document.querySelector('.container_center_top');
+
+        let isScrolling = false;
+        let isVisible = false;
+
+        function handleScroll(event) {
+          event.preventDefault();
+
+          if (!isScrolling && isVisible) {
+            isScrolling = true;
+
+            const delta = Math.sign(event.deltaY);
+            const scrollAmount = 700; // Adjust this value for smoother or faster scrolling
+            const animationDuration = 800; // Animation duration in ms
+            const startTime = performance.now();
+            const startScrollLeft = containerTop.scrollLeft;
+            const targetScrollLeft =
+              containerTop.scrollLeft + delta * scrollAmount;
+
+            function scrollAnimation(currentTime) {
+              const elapsedTime = currentTime - startTime;
+              if (elapsedTime >= animationDuration) {
+                containerTop.scrollLeft = targetScrollLeft;
+                isScrolling = false;
+                return;
+              }
+
+              const ease = easeOutCubic(elapsedTime / animationDuration);
+              containerTop.scrollLeft =
+                startScrollLeft + (targetScrollLeft - startScrollLeft) * ease;
+
+              requestAnimationFrame(scrollAnimation);
+            }
+
+            function easeOutCubic(t) {
+              return (t = t - 1) * t * t + 1;
+            }
+
+            requestAnimationFrame(scrollAnimation);
+          }
+        }
+
+        function checkScrollLimits(event) {
+          if (containerTop.scrollLeft === 0 && event.deltaY < 0) {
+            // If we're at the start of horizontal scroll and scrolling up, allow vertical scroll
+            return false;
+          }
+
+          if (
+            containerTop.scrollLeft + containerTop.clientWidth >=
+              containerTop.scrollWidth &&
+            event.deltaY > 0
+          ) {
+            // If we're at the end of horizontal scroll and scrolling down, allow vertical scroll
+            return false;
+          }
+
+          return true;
+        }
+
+        const observerOptions = {
+          root: null,
+          threshold: 0.6, // 50% threshold
+        };
+
+        function observerCallback(entries) {
+          entries.forEach((entry) => {
+            isVisible = entry.isIntersecting;
+          });
+        }
+
+        const observer = new IntersectionObserver(
+          observerCallback,
+          observerOptions
+        );
+        observer.observe(containerTop);
+
+        containerCenter.addEventListener('wheel', (event) => {
+          if (checkScrollLimits(event)) {
+            handleScroll(event);
+          }
+        });
+
+        containerTop.addEventListener('wheel', (event) => {
+          if (checkScrollLimits(event)) {
+            handleScroll(event);
+          }
+        });
+      });
+    </script>
   </body>
 </html>

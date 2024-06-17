@@ -115,3 +115,44 @@ h4 {
   background-size: 4px 4px;
   border-radius: 50%;
 }
+
+.container {
+  width: auto;
+  padding-inline: 42px;
+}
+.container_top_text {
+  margin-top: 150px;
+  margin-bottom: 12px;
+  font-size: 32px;
+  font-weight: 300;
+}
+.container_top_img {
+  min-width: 500px;
+  max-width: 50%;
+  margin-bottom: 100px;
+}
+.container_center {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.container_center_top {
+  position: sticky;
+  top: 0;
+  display: flex;
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.box {
+  max-width: 50%;
+}
+
+.change-color {
+  color: rgb(21, 45, 179) !important;
+}
+
+.change-bg {
+  background-image: radial-gradient(circle, rgb(237, 219, 212) 1px, transparent 1px) !important;
+}
