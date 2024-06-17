@@ -45,7 +45,7 @@
         </div>
         <div class="main_bottom">
           <div class="main_bottom_text">
-            <div class="main_bottom_text_left">REFLAT</div>
+            <div class="main_bottom_text_left"></div>
             <div class="main_bottom_text_right">
               <div class="circle_1"></div>
               <div class="main_bottom_text_right_1">
@@ -70,7 +70,124 @@
             <img src="/img/reflat/form_4.png" alt="" class="box" />
             <img src="/img/reflat/form_5.png" alt="" class="box" />
           </div>
+          <div class="container_center_bottom">
+            <div class="circle_2"></div>
+            <div class="container_center_text">
+              이름 이니셜 알파벳인 'S'로 내용에 맞는 심볼을 제작한다. 임팩트
+              있었던 사건들을 대표할 수 있는 간단한 아이콘을 만들고 알파벳 S에
+              적절히 대입시킨다. 아이콘은 면과 선을 적절히 활용하여 보는 이로
+              하여금 심심하지 않도록 제작한다.
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="bottom">
+        <div class="bottom_top">
+          <div class="bottom_top_text">REFLAT</div>
+          <img src="/img/reflat/reflat_1.png" alt="" class="bottom_top_img" />
+        </div>
+        <div class="bottom_center">
+          <div class="circle_1"></div>
+          <div class="bottom_center_text">
+            나의 인생에서 임팩트 있었던 사건들을 위주로 내용을 정리한다. 이름
+            이니셜 알파벳인 'S'로 내용에 맞는 심볼을 제작한다. 전체적인
+            레이아웃과 색상, 서체 등을 선정하여 리플렛을 구성한다.
+          </div>
+          <div class="bottom_center_text_1"></div>
+        </div>
+        <div class="bottom_bottom">
+          <img
+            src="/img/reflat/reflat_2.png"
+            alt=""
+            class="bottom_bottom_img"
+          />
+          <img
+            src="/img/reflat/reflat_3.png"
+            alt=""
+            class="bottom_bottom_img"
+          />
+        </div>
+      </div>
+      <div class="footer">
+        <div class="footer_1">MORE PROJECT!</div>
+        <a class="footer_2" href="/pages/page_2.html">
+          <img
+            src="/img/less_is_bore/Less_is_bore.png"
+            alt=""
+            class="footer_img"
+          />
+          <div class="footer_text">
+            <div class="footer_text_1">PROJECT</div>
+            <div class="footer_text_2">
+              <div class="circle_3"></div>
+              <div>BASIC COMMUNICATION DESIGN</div>
+            </div>
+          </div>
+          <div class="footer_2_view">
+            <div class="footer_2_view_text">VIEW PROJECT!</div>
+            <img src="/img/reflat/arrow.png" alt="" class="footer_2_view_img" />
+          </div>
+        </a>
+        <a class="footer_3" href="/pages/page_3.html">
+          <img src="/img/poster/poster.png" alt="" class="footer_img" />
+          <div class="footer_text">
+            <div class="footer_text_1">PROJECT</div>
+            <div class="footer_text_2">
+              <div class="circle_3"></div>
+              <div>TYPOGRAPHY POSTER</div>
+            </div>
+          </div>
+          <div class="footer_3_view">
+            <div class="footer_3_view_text">VIEW PROJECT!</div>
+            <img src="/img/reflat/arrow.png" alt="" class="footer_3_view_img" />
+          </div>
+        </a>
+        <a class="footer_4" href="/pages/page_4.html">
+          <video autoplay muted loop class="footer_img">
+            <source src="/img/book/book.mp4" type="video/mp4" />
+          </video>
+          <div class="footer_text">
+            <div class="footer_text_1">PROJECT</div>
+            <div class="footer_text_2">
+              <div class="circle_3"></div>
+              <div>TYPOGRAPHY BOOK</div>
+            </div>
+          </div>
+          <div class="footer_4_view">
+            <div class="footer_4_view_text">VIEW PROJECT!</div>
+            <img src="/img/reflat/arrow.png" alt="" class="footer_4_view_img" />
+          </div>
+        </a>
+        <a class="footer_5" href="/pages/page_5.html">
+          <video autoplay muted loop class="footer_img">
+            <source src="/img/motion/freitag.mp4" type="video/mp4" />
+          </video>
+          <div class="footer_text">
+            <div class="footer_text_1">PROJECT</div>
+            <div class="footer_text_2">
+              <div class="circle_3"></div>
+              <div>2D MOTION GRAPHICS</div>
+            </div>
+          </div>
+          <div class="footer_5_view">
+            <div class="footer_5_view_text">VIEW PROJECT!</div>
+            <img src="/img/reflat/arrow.png" alt="" class="footer_5_view_img" />
+          </div>
+        </a>
+        <a class="footer_6" href="/pages/page_6.html">
+          <img src="/img/package/package.png" alt="" class="footer_img" />
+          <div class="footer_text">
+            <div class="footer_text_1">PROJECT</div>
+            <div class="footer_text_2">
+              <div class="circle_3"></div>
+              <div>PACKAGE DESIGN</div>
+            </div>
+          </div>
+          <div class="footer_6_view">
+            <div class="footer_6_view_text">VIEW PROJECT!</div>
+            <img src="/img/reflat/arrow.png" alt="" class="footer_6_view_img" />
+          </div>
+        </a>
       </div>
     </div>
     <script>
@@ -97,13 +214,13 @@
             } else {
               document
                 .querySelectorAll(
-                  '.section_menu_left, .section_menu_center, .section_menu_right'
+                  '.section_menu_left, .section_menu_center, .section_menu_right,'
                 )
                 .forEach((el) => {
                   el.classList.remove('change-color');
                 });
               document
-                .querySelector('.section_menu')
+                .querySelector('.section_menu ')
                 .classList.remove('change-bg');
             }
           });
@@ -134,8 +251,8 @@
             isScrolling = true;
 
             const delta = Math.sign(event.deltaY);
-            const scrollAmount = 700; // Adjust this value for smoother or faster scrolling
-            const animationDuration = 800; // Animation duration in ms
+            const scrollAmount = 700;
+            const animationDuration = 800;
             const startTime = performance.now();
             const startScrollLeft = containerTop.scrollLeft;
             const targetScrollLeft =
@@ -166,7 +283,6 @@
 
         function checkScrollLimits(event) {
           if (containerTop.scrollLeft === 0 && event.deltaY < 0) {
-            // If we're at the start of horizontal scroll and scrolling up, allow vertical scroll
             return false;
           }
 
@@ -175,7 +291,6 @@
               containerTop.scrollWidth &&
             event.deltaY > 0
           ) {
-            // If we're at the end of horizontal scroll and scrolling down, allow vertical scroll
             return false;
           }
 
@@ -184,7 +299,7 @@
 
         const observerOptions = {
           root: null,
-          threshold: 0.6, // 50% threshold
+          threshold: 0.4,
         };
 
         function observerCallback(entries) {
