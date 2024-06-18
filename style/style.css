@@ -23,6 +23,7 @@ h4 {
   padding-inline: 42px;
   margin-block: 8px;
   font-size: 14px;
+  background-color: #fff;
   background-image: radial-gradient(circle, rgb(237, 219, 212) 1px, transparent 1px);
   background-size: 5px 5px;
 }

@@ -24,6 +24,7 @@ h4 {
   margin-block: 8px;
   font-size: 14px;
   color: #e3e3e3;
+  background-color: rgb(46, 49, 97);
   background-image: radial-gradient(circle, rgb(158, 54, 54) 1px, transparent 1px);
   background-size: 5px 5px;
 }
