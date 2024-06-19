@@ -31,7 +31,9 @@ h4 {
   text-align: left;
 }
 .section_menu_center {
+  color: inherit;
   text-align: center;
+  text-decoration: none;
 }
 .section_menu_right {
   text-align: right;
